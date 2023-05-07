@@ -8,7 +8,7 @@ tags: javascript, ux, images, reactjs, frontend-development
 
 ---
 
-Things can quickly go from "I am super excited to view this landing page" to "Why is it taking so long for this image to show? Dev is frustrating me!". Sadly, end users fail to understand that this isn't entirely on you - the dev, but may be due to the client's poor internet connection.
+Things can quickly go from "I am super excited to view this landing page" to "Why is it taking so long for this image to show? This is frustrating!". Sadly, end users fail to understand that this isn't entirely on you - the dev, but may be due to the client's poor internet connection.
 
 In this tutorial, we'll learn how to tone down the bad UX by rendering the page contents after loading an image resource. We can wait for the entire image resource in a webpage to load, but this may take more time and add to the frustration. Hence this article focuses on listening for a specific image to load, in our case, the hero image.
 
