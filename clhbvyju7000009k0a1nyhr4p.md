@@ -12,7 +12,7 @@ Things can quickly go from "I am super excited to view this landing page" to "Wh
 
 In this tutorial, we'll learn how to tone down the bad UX by rendering the page contents after loading an image resource. We can wait for the entire image resource in a webpage to load, but this may take more time and add to the frustration. Hence this article focuses on listening for a specific image to load, in our case, the hero image.
 
-# **Prerequisites**
+## **Prerequisites**
 
 * Code editor and browser.
     
@@ -25,9 +25,9 @@ In this tutorial, we'll learn how to tone down the bad UX by rendering the page 
 
 **Let's get started**
 
-# Installation
+## Installation
 
-## Cloning the Starter App
+### Cloning the Starter App
 
 To get started, I have provided a starter app on GitHub. To help us focus on implementation, the UI has been built already. The application has been configured with `Create React App` and `SCSS`. Open your terminal and run the following command:
 
@@ -49,7 +49,7 @@ Or if you prefer npm, use:
 npm install
 ```
 
-## Installing React Spinners
+### Installing React Spinners
 
 Next, let's install `React Spinners`, which would be conditionally displayed while waiting for our image to finish loading. Use the following command to install it:
 
@@ -83,7 +83,7 @@ Voilà! You should see the hero page displayed on your browser as seen below:
 
 *We'll learn to display the page content after fully loading the hero image. Let's dive!*
 
-# Implementing the Logic
+## Implementing the Logic
 
 Open the `App.jsx` file and paste the following codes just before the `return` statement:
 
@@ -116,7 +116,7 @@ In the above snippet, we did the following:
 4. Accessing a single image element then gives us access to the `complete` and `naturalHeight` properties that can be used to know if an image is fully loaded.
     
 
-# Conditionally Displaying Spinner
+## Conditionally Displaying Spinner
 
 A spinner in React is a small visual element that shows up on a web page when something is loading or processing. It looks like a little circle that spins around and around. You might have seen it before when you're waiting for a video to load or for a game to start.
 
@@ -174,7 +174,7 @@ Next, replace your existing JSX in the app.jsx file with the codes below:
 
 From the snippets above, we created a second `div` that's used to house our `ClipLoader` component. The added inline styles are used to conditionally display or hide either of the `divs` depending on the status of `isLoaded` application state. The idea is to have the page resources loading in the background while displaying the spinner.
 
-# Conclusion
+## Conclusion
 
 Images play a vital role in enhancing the visual appeal of web pages. However, it's important to optimize image loading to improve user experience. Techniques such as lazy-loading and resizing can help reduce file size and improve load times. Additionally, providing users with a loading spinner can enhance engagement and a good user experience.
 
