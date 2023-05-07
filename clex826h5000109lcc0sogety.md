@@ -21,7 +21,7 @@ In this article, we'll explore how CSS absolute and relative units work behind t
 
 By the end of this article, you'll have a solid understanding of these fundamental CSS concepts and be able to use them more effectively in your web development projects.
 
-# **Prerequisites**
+## **Prerequisites**
 
 * Web browser.
     
@@ -30,7 +30,7 @@ By the end of this article, you'll have a solid understanding of these fundament
 * Basic HTML and CSS knowledge.
     
 
-# **An Overview of Absolute and Relative Units**
+## **An Overview of Absolute and Relative Units**
 
 **Absolute units** are fixed measurements that are not dependent on any other factor; absolute units are fixed and independent CSS units.
 
@@ -60,7 +60,7 @@ Examples of relative units include percent (%), em, root em (rem), viewport heig
 
 Relative units are useful when there's a need to specify a size or position that should adjust proportionally to other elements on the page or the viewport size. They are ideal for responsive designs because they can adapt to different screen sizes and orientations automatically. However, relative units can sometimes lead to inconsistencies across different browsers or devices, and it may require additional CSS code to ensure that the design remains consistent.
 
-# **How Absolute Units Work Behind the Scenes**
+## **How Absolute Units Work Behind the Scenes**
 
 When an absolute unit is used in CSS to specify the size or position of an element, the browser uses the pixel density of the user's device to calculate the final size or position.
 
@@ -92,11 +92,11 @@ Let's take a look at the behaviour of the `div` element in a browser when it is 
 
 Have you noticed that when you toggle between 1x, 0.5x, and 0.25x on CodePen, the element doesn't adjust in size or position? This is because it was sized and positioned using an absolute unit.
 
-# **How Relative Units Work Behind the Scenes**
+## **How Relative Units Work Behind the Scenes**
 
 When a relative unit is used in CSS to specify the size or position of an element, the browser first calculates the size or position of the parent element and then multiplies or divides that value by the value specified using the relative unit. Results from the calculation would solely depend on the relative unit used—%, em, rem, vw, and vh.
 
-## **Percentage (%) Relative Unit**
+### **Percentage (%) Relative Unit**
 
 In simple mathematics, we get asked to calculate a certain percentage of a number. For example, you can be asked to calculate 20% of 100.
 
@@ -115,7 +115,7 @@ You may ask yourself how attaching a percentage unit to an element gives it the 
 
 %[https://codepen.io/utin-francis-peter/pen/eYLRmzm] 
 
-## **REM and EM Relative Unit**
+### **REM and EM Relative Unit**
 
 These units are relative to the font size of the element they are applied to, making them a flexible option for responsive design. When we say that REM and EM units are "relative to the font size of the element they are applied to," we mean that the size we specify using these units will be based on the font size of the element we're styling. However, even though REM and EM units are both relative to the font size of the element they're applied to, there are some important differences between them. These differences have to do with how the units are calculated and how they interact with the parent elements on the web page. In subsequent paragraphs, we'll explore these differences in more detail!
 
@@ -229,14 +229,14 @@ Cross-multiplying results in:
 
 *Therefore, 32px is equivalent to 2em when the parent element's font size is 16px.*
 
-> Now try converting 5em to px, assuming: 
+> Now try converting 5em to px, assuming:
 > 
 > * The parent element’s font size is set to 2rem.
 >     
 > * The HTML root element’s font size is set to 20px.
 >     
 
-## **Browser Viewport’s Relative Units (VW and VH)**
+### **Browser Viewport’s Relative Units (VW and VH)**
 
 Viewport relative units are CSS units that are relative to the size of the viewport, which is the visible area of the browser window. The two most commonly used viewport relative units are vw and vh. The "vw" unit represents 1% of the viewport's width, while the "vh" unit represents 1% of the viewport's height.
 
@@ -250,7 +250,7 @@ Let's see what happens when a nested child element is being sized, using the bro
 
 %[https://codepen.io/utin-francis-peter/pen/poOwbPK] 
 
-# **Conclusion**
+## **Conclusion**
 
 CSS provides several units for sizing and positioning elements on a webpage.
 
